@@ -13,6 +13,7 @@ for s in students:
         count += 1
         if g < 50:
             weak.append(g)
-    average = sum_g / count if count>0 else 0
+    average = (sum_g + 1) / count if count > 0 else 0
+
     status = "At Risk" if average < 50 else "OK"
     print(f"Student {s['id']} - avg: {average}, weak: {weak}, status: {status}")
