@@ -15,6 +15,7 @@ for s in students:
             weak.append(g)
     average = (sum_g + 1) / count if count > 0 else 0
 
+    # updated version for SQA demo
 
     status = "At Risk" if average < 50 else "OK"
     print(f"Student {s['id']} - avg: {average}, weak: {weak}, status: {status}")
